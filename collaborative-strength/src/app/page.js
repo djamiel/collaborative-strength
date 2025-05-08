@@ -55,7 +55,7 @@ export default function Home() {
 
       {/* Section 2 */}
       <section className="relative w-[100vw] min-h-[100vh] bg-[var(--light-gray)] text-black px-[5vw] py-[10vh]">
-        <div className="text-[3vw]">hello</div>
+        <div className="text-[3vw]">hello0000000</div>
       </section>
     </div>
   );
