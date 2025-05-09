@@ -1,4 +1,5 @@
 import Button from "./components/Button";
+import ScrollDown from "./components/ScrollDown";
 
 export default function Home() {
   return (
@@ -34,28 +35,38 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Scroll indicator */}
-        <div className="absolute bottom-[2vw] right-[2vw] z-30 flex items-center text-[var(--light-gray)] text-[1.5vw] animate-bounce">
-          <span className="mr-[1vw]">Scroll down</span>
-          <svg
-            className="w-[2vw] h-[2vw]"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M19 9l-7 7-7-7"
-            />
-          </svg>
+        {/* Scroll indicator - netjes uitgelijnd met de layout */}
+        <div className="absolute bottom-[2vw] right-[5vw] z-30">
+          <ScrollDown />
         </div>
       </section>
 
       {/* Section 2 */}
-      <section className="relative w-[100vw] min-h-[100vh] bg-[var(--light-gray)] text-black px-[5vw] py-[10vh]">
-        <div className="text-[3vw]">ksjdbibakjnas</div>
+      <section className="relative w-[100vw] min-h-[100vh] bg-[var(--light-gray)] text-[var(--dark)] py-[15vh]">
+        <div
+          className="absolute inset-0 bg-center bg-cover bg-no-repeat opacity-40"
+          style={{ backgroundImage: "url('/backgroundwall.png')" }}
+        ></div>
+        <div className=" relative z-10 flex items-center flex-col pb-[10vw]">
+          <p className="text-[2.5vw] font-bold w-[55vw] pb-[2vw] text-center">
+            Je weet dat je sterker wilt worden, maar wat betekent powerlifing
+            écht voor jou?
+          </p>
+          <p className="text-[1.1vw]/[2vw] w-[45vw]">
+            Samen gaan we ontdekken waar jij het meeste plezier uithaalt en hoe
+            we daar een plan omheen bouwen. Progressie komt niet alleen door
+            harder trainen, maar vooral door een aanpak die past bij jouw
+            ambities en waar je langdurig gemotiveerd door blijft. Je doelen
+            hoeven nietvast te staan. We werken eraan, passen het aan waar
+            nodig, en zorgen ervoor dat jij blijft groeien.
+          </p>
+        </div>
+        <div className=" relative z-10 flex items-center flex-col pb-[2vw]">
+          <p className="text-[2.5vw] font-bold w-[55vw] pb-[2vw] text-center">
+            Je weet dat je sterker wilt worden, maar wat betekent powerlifing
+            écht voor jou?
+          </p>
+        </div>
       </section>
     </div>
   );
